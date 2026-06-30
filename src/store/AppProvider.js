@@ -17,7 +17,7 @@ const AppProvider = ({ children }) => {
     setHasSearched(true);
 
     try {
-      const response = await fetch("/search", {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/search`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query }),
