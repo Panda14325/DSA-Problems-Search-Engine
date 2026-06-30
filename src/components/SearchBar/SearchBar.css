@@ -1,0 +1,61 @@
+.cta {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
+}
+
+.query-input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #0070f3;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
+  box-shadow: 0 2px 6px rgba(0, 112, 243, 0.4);
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 500px) {
+  .tagline {
+    font-size: 1rem;
+    flex-wrap: wrap;
+  }
+  .cta {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .search-form {
+    flex-direction: column;
+  }
+}
